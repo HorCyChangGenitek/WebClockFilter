@@ -1,0 +1,8 @@
+{
+  "name": "web-clock-filter",
+  "version": "1.0.0",
+  "description": "Chrome extension to allow or block websites based on schedule",
+  "scripts": {
+    "test": "echo 'No tests specified' && exit 0"
+  }
+}
