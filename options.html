@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Web Clock Filter Options</title>
+  <script src="options.js" defer></script>
+</head>
+<body>
+  <h1>Web Clock Filter Options</h1>
+  <section>
+    <h2>Mode</h2>
+    <label><input type="radio" name="mode" value="allow_all" /> Allow all except blacklist</label><br />
+    <label><input type="radio" name="mode" value="block_all" /> Block all except whitelist</label><br />
+    <label><input type="radio" name="mode" value="schedule" /> Block blacklist by schedule</label>
+  </section>
+  <section>
+    <h2>Blacklist</h2>
+    <textarea id="blacklist" rows="5" cols="40"></textarea>
+  </section>
+  <section>
+    <h2>Whitelist</h2>
+    <textarea id="whitelist" rows="5" cols="40"></textarea>
+  </section>
+  <section id="schedule-section" style="display:none;">
+    <h2>Schedule</h2>
+    <div>
+      <label><input type="checkbox" class="day" value="0" />Sun</label>
+      <label><input type="checkbox" class="day" value="1" />Mon</label>
+      <label><input type="checkbox" class="day" value="2" />Tue</label>
+      <label><input type="checkbox" class="day" value="3" />Wed</label>
+      <label><input type="checkbox" class="day" value="4" />Thu</label>
+      <label><input type="checkbox" class="day" value="5" />Fri</label>
+      <label><input type="checkbox" class="day" value="6" />Sat</label>
+    </div>
+    <div id="times"></div>
+    <button id="add-time">Add Time Range</button>
+  </section>
+  <button id="save">Save</button>
+</body>
+</html>
